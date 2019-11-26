@@ -26,7 +26,7 @@ public class SwaggerConfig implements WebMvcConfigurer {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("springboot"))
+                .apis(RequestHandlerSelectors.basePackage("magic"))
                 .paths(PathSelectors.any())
                 .build();
     }
